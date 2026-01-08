@@ -3,8 +3,10 @@
     "configMode": "AUTO",
     "configExternalURL": "",
     "projectToken": "",
-    "baseBranches": []
-  },
+    "baseBranches": [],
+    "versioning": {
+       "gradle": "3.4.1"
+  }},
   "scanSettingsSAST": {
     "enableScan": true,
     "scanPullRequests": true,
