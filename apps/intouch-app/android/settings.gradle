@@ -1,6 +1,8 @@
-pluginManagement { includeBuild("../../../node_modules/@react-native/gradle-plugin") }
-plugins { id("com.facebook.react.settings") }
-extensions.configure(com.facebook.react.ReactSettingsExtension){ ex -> ex.autolinkLibrariesFromCommand() }
 rootProject.name = 'intouch'
 include ':app'
-includeBuild('../../../node_modules/@react-native/gradle-plugin')
+
+// React Native marker for scanner detection (conditional so it doesn't fail if missing)
+def rnPluginDir = file("../../../node_modules/@react-native/gradle-plugin")
+if (rnPluginDir.exists()) {
+    includeBuild("../../../node_modules/@react-native/gradle-plugin")
+}
