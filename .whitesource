@@ -1,7 +1,7 @@
 {
   "scanSettings": {
     "configMode": "AUTO",
-    "configExternalURL": "",
+    "configExternalURL": "https://raw.githubusercontent.com/mend-detection-qa/react_native_gradle_17/main/mend-sca-trace.config",
     "projectToken": "",
     "baseBranches": [],
     "versioning": {
